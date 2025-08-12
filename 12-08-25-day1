@@ -1,0 +1,76 @@
+#program to print hello python
+print("Hello Python")
+
+# Write a Python program to do arithmetical operations addition and division.  by using functions
+
+# fun is a block of code repeated code rreuse , readability 
+
+a= int(input())
+b=int(input())
+def fun_name(p1,p2):  #function definiton
+    return p1+p2  #p1, p2 are parameter - formal values 
+    
+    
+c = fun_name(a,b)  #function calling  a,b is arguments - actual values 
+
+print(c)
+
+#division
+
+def fun_name2(p1,p2):
+    if p2==0:
+        return "not possible"
+        #print("not possible by user")
+    else: 
+        return p1/p2
+
+d=fun_name2(a,b)
+print(d)
+
+
+#3)Write a Python program to find the area of a triangle
+base = int(input("Enter your base length))
+height = int(input("Enter your height))
+area = 0.5 * base * height
+print(area)
+
+def tri_area(base,height):
+    return 0.5 * base * height
+
+area_tri = tri_area(base,height)
+print("the area of the triangle ",area_tri)
+
+#4)program to find whether the given number is even or odd by using function
+
+num = int(input("Enter your number"))
+def even_odd(n):
+    if n%2 ==0:
+        print("the even number is ",n)
+
+    else:
+        print("the odd number is ",n)
+
+c = even_odd(num)
+
+
+
+#5)program to find whether the given is prime or not
+#program to check whether the given number is prime or not
+
+n = int(input("Enter your number" ))
+count =0
+if n==1:
+    print("n or n")
+if n==2:
+    print("Even")
+for i in range(2,n):
+    if n%i==0:
+        count = count +1
+if count >= 1 :
+    print(" not a prime")
+else:
+    print("prime")
+
+
+
+
